@@ -3,29 +3,48 @@
 ## Project Structure
 
 ```
+.
+├── package.json
+├── package-lock.json
 ├── public
-│   ├── index.html
-│   ├── javascript
-│   │   ├── components 
-│   │   │   ├── header.js
-│   │   │   ├── login_form.js
-│   │   │   ├── new_property_form.js
-│   │   │   ├── property_listing.js
-│   │   │   ├── property_listings.js
-│   │   │   ├── search_form.js
-│   │   │   └── signup_form.js
-│   │   ├── index.js
-│   │   ├── libraries
-│   │   ├── network.js
-│   │   └── views_manager.js
-│   └── styles
+│   ├── index.html
+│   ├── javascript
+│   │   ├── components
+│   │   │   ├── header.js
+│   │   │   ├── login_form.js
+│   │   │   ├── new_property_form.js
+│   │   │   ├── property_listing.js
+│   │   │   ├── property_listings.js
+│   │   │   ├── search_form.js
+│   │   │   └── signup_form.js
+│   │   ├── index.js
+│   │   ├── libraries
+│   │   │   ├── addressfield
+│   │   │   │   ├── addressfield.min.json
+│   │   │   │   └── jquery.addressfield.min.js
+│   │   │   ├── jquery-3.4.0.min.js
+│   │   │   └── moment.js
+│   │   ├── network.js
+│   │   └── views_manager.js
+│   └── styles
+│       ├── main.css
+│       └── main.css.map
+├── README.md
 ├── sass
+│   ├── _forms.scss
+│   ├── _header.scss
+│   ├── main.scss
+│   └── _property-listings.scss
 └── server
-  ├── apiRoutes.js
-  ├── database.js
-  ├── json
-  ├── server.js
-  └── userRoutes.js
+    ├── app.js
+    ├── db
+    │   └── index.js
+    ├── json
+    │   ├── properties.json
+    │   └── users.json
+    └── routes
+        ├── apiRoutes.js
+        └── userRoutes.js
 ```
 
 * `public` contains all of the HTML, CSS, and client side JavaScript. 
